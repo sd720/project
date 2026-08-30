@@ -1,0 +1,15 @@
+{
+  "name": "gold-loan-portal",
+  "version": "1.0.0",
+  "description": "Gold Loan Application & Data Collection Portal",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
